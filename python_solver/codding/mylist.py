@@ -8,6 +8,7 @@ class SingleListNode:
         for val in lst:
             head = SingleListNode(val, next=head)
         return head
+
     def list_print(linkedList: "SingleListNode") -> None:
         while linkedList != None:
             if linkedList.next != None:

@@ -2,7 +2,9 @@ from typing import Optional
 from .mylist import SingleListNode
 
 
-def addTwoNumbers(l1: Optional[SingleListNode], l2: Optional[SingleListNode]) -> Optional[SingleListNode]:
+def addTwoNumbers(
+    l1: Optional[SingleListNode], l2: Optional[SingleListNode]
+) -> Optional[SingleListNode]:
     v1: str = ""
     v2: str = ""
     while l1 != None or l2 != None:

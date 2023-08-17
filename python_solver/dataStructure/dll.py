@@ -47,8 +47,8 @@ class DoubleListNode:
         """
         head, tail = DoubleListNode.list_append(lst)
         return [tail, head]
-    
-    def list_print_head(head: 'DoubleListNode'):
+
+    def list_print_head(head: "DoubleListNode"):
         temp = head
         while temp != None:
             if temp.next != None:
@@ -57,8 +57,8 @@ class DoubleListNode:
                 print(temp.val)
             temp = temp.next
         print("")
-    
-    def list_print_tail(tail: 'DoubleListNode'):
+
+    def list_print_tail(tail: "DoubleListNode"):
         temp = tail
         while temp != None:
             if temp.prev != None:

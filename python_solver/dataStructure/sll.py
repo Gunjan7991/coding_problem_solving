@@ -45,7 +45,7 @@ class SingleListNode:
             head = SingleListNode(val, next=head)
         return head
 
-    def list_print(head: 'SingleListNode'):
+    def list_print(head: "SingleListNode"):
         temp = head
         while temp != None:
             if temp.next != None:
