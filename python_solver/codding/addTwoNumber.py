@@ -1,5 +1,5 @@
 from typing import Optional
-from .mylist import SingleListNode
+from dataStructure.mylist import SingleListNode
 
 
 def addTwoNumbers(
