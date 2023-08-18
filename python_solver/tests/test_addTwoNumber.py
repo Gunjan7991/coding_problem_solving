@@ -1,5 +1,5 @@
 from codding.addTwoNumber import addTwoNumbers
-from codding.mylist import SingleListNode
+from dataStructure.mylist import SingleListNode
 
 
 def compare_linkedList(l1, l2) -> bool:
