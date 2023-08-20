@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-7.4.0, pluggy-1.2.0
+rootdir: /Users/gunjanbanset/Desktop/programming/coding_problem_solving/python_solver
+plugins: cov-4.1.0
+collected 20 items
+
+tests/test_addTwoNumber.py .....                                         [ 25%]
+tests/test_lengthOfLongestSubstring.py .....                             [ 50%]
+tests/test_matrixDiagnolSum.py .....                                     [ 75%]
+tests/test_twoSumProblem.py .....                                        [100%]
+
+---------- coverage: platform darwin, python 3.9.6-final-0 -----------
+Name                                  Stmts   Miss  Cover
+---------------------------------------------------------
+codding/MatrixDiagnolSum.py              23      9    61%
+codding/Richest.py                        5      5     0%
+codding/__init__.py                       0      0   100%
+codding/addTwoNumber.py                  18      0   100%
+codding/lengthOfLongestSubstring.py      11      0   100%
+codding/longestPalindrome.py             17     17     0%
+codding/medianOfTwoSortedArray.py        36     36     0%
+codding/twoSumProblem.py                  8      1    88%
+dataStructure/mylist.py                  15      5    67%
+main.py                                   2      2     0%
+---------------------------------------------------------
+TOTAL                                   135     75    44%
+
+
+============================== 20 passed in 0.06s ==============================
