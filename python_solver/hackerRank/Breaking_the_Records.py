@@ -13,22 +13,23 @@ import sys
 # The function accepts INTEGER_ARRAY scores as parameter.
 #
 
+
 def breakingRecords(scores):
-    minScore, maxScore, minCount, maxCount = scores[0],scores[0], 0,0
+    minScore, maxScore, minCount, maxCount = scores[0], scores[0], 0, 0
     for score in scores:
-        
         if score < minScore:
             minScore = score
             minCount += 1
         if score > maxScore:
             maxScore = score
-            maxCount +=1
-        
-    print (f"[MAX, MIN] = {[maxCount,minCount]}")      
-    return [maxCount,minCount]
+            maxCount += 1
 
-if __name__ == '__main__':
-    fptr = open('hackerRank/input.file', 'r')
+    print(f"[MAX, MIN] = {[maxCount,minCount]}")
+    return [maxCount, minCount]
+
+
+if __name__ == "__main__":
+    fptr = open("hackerRank/input.file", "r")
     num_records = fptr.readline()
     records = fptr.readline()
     fptr.close()
