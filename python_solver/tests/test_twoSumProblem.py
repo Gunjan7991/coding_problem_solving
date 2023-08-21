@@ -18,4 +18,4 @@ def test_twoSum_4():
 
 
 def test_twoSum_5():
-    assert twoSum([11, 13, 15, 17, 19, 21, 23], 40) == [4, 5]
+    assert twoSum([11, 12], 40) == []
