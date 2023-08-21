@@ -14,25 +14,3 @@ def diagonalSum(mat: list[list[int]]) -> int:
         j -= 1
 
     return total
-
-
-if __name__ == "__main__":
-    if diagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == 25:
-        print("Passed")
-    else:
-        print("Failed")
-    if diagonalSum([[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]) == 8:
-        print("Passed")
-    else:
-        print("Failed")
-    if (
-        diagonalSum(
-            [
-                [5],
-            ]
-        )
-        == 5
-    ):
-        print("Passed")
-    else:
-        print("Failed")
