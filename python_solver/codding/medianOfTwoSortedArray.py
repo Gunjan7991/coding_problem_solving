@@ -36,7 +36,3 @@ def findMedianSortedArraysFast(nums1: list[int], nums2: list[int]) -> float:
         idx = l // 2
         return (newList[idx - 1] + newList[idx]) / 2
     return newList[l // 2]
-
-
-if __name__ == "__main__":
-    print(findMedianSortedArrays([1, 2], [3, 4]))
