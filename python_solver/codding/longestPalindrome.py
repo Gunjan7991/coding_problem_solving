@@ -1,6 +1,6 @@
 def longestPalindrome(self, s: str) -> str:
     """
-    Longest Palindrome: 
+    Longest Palindrome:
         Dificulty: Medium
         In this problem,  we have to identify
     """
@@ -20,7 +20,9 @@ def longestPalindrome(self, s: str) -> str:
         left, right, value = pos, pos, 1
 
         # Check if we can expand around the center
-        while left > 0 and right < len(new_s) - 1 and new_s[left - 1] == new_s[right + 1]:
+        while (
+            left > 0 and right < len(new_s) - 1 and new_s[left - 1] == new_s[right + 1]
+        ):
             value += 2
             left -= 1
             right += 1
@@ -36,6 +38,6 @@ def longestPalindrome(self, s: str) -> str:
     right = b_pos + (max(weight) // 2)
 
     # Extract the longest palindromic substring and remove "$" symbols
-    longest_palindrome = new_s[left:right + 1:1].replace("$", "")
+    longest_palindrome = new_s[left : right + 1 : 1].replace("$", "")
 
     return longest_palindrome
