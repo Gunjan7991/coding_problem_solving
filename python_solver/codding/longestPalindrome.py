@@ -1,4 +1,4 @@
-def longestPalindrome(self, s: str) -> str:
+def longestPalindrome(s: str) -> str:
     """
     Longest Palindrome:
         Dificulty: Medium
