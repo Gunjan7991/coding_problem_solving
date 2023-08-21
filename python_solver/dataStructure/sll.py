@@ -6,9 +6,30 @@ class SingleListNode:
     indicating the end of the list.
     """
 
-    def __init__(self, val=0, next=None):
-        self.val = val
+    def __init__(self, node_data, next=None):
+        self.node_data = node_data
         self.next = next
+
+    def insertNodeAtTail(head, data):
+        mem = head
+        new_node = SingleListNode(node_data=data)
+        if head == None:
+            head = new_node
+            mem = head
+        else:
+            while head.next != None:
+                head = head.next
+            head.next = new_node
+        return mem
+
+    def insertNodeAtHead(head, data):
+        new_node = SingleListNode(data)
+        if head == None:
+            head = new_node
+        else:
+            new_node.next = head
+            head = new_node
+        return head
 
     def list_queue(lst: list[any]) -> "SingleListNode":
         """
